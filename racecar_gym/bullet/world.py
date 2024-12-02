@@ -39,6 +39,7 @@ class World(world.World):
         self._agents = agents
         self._state = dict([(a.id, {}) for a in agents])
         self._objects = {}
+
         self._starting_grid = np.load(config.map_config.starting_grid)['data']
         self._maps = dict([
             (name, GridMap(

@@ -58,6 +58,8 @@ class SingleAgentRaceEnv(gymnasium.Env):
         return obs, state[self._scenario.agent.id]
 
     def render(self) -> Union[RenderFrame, list[RenderFrame], None]:
+        import pdb
+        pdb.set_trace()
         if self._render_mode == 'human':
             return None
         else:
